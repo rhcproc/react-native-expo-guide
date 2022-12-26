@@ -32,7 +32,8 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
-<img src="https://github.com/rhcproc/react-native-redux-toolkit-examples/blob/develop/images/01-counter.gif"width="200" height="300" />
+
+<img src="/images/01-counter.gif" width="320" height="480"/>
 
 These are examples of a redux-toolkit. 
 
