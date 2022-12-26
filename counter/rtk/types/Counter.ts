@@ -1,0 +1,4 @@
+interface Counter {
+    count: number;
+  }
+  
