@@ -35,7 +35,7 @@
 
 <img src="/images/01-counter.gif" width="320" height="480"/>
 
-These are examples of a redux-toolkit. 
+These are examples of a redux-toolkit. (Expo based)
 
 - counter app: This app has two functions that are used for increment and decrement. Basically, this app is based on an expo and inspired [this counter app](https://github.com/fomagran/ReduxTSPractice). I just add an expo environment to this project. 
 - todo list app: ready.
