@@ -49,6 +49,16 @@ These are examples of a redux-toolkit.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+### Base templates
+These examples are created with the below command.
+
+* ```npx create-expo-app -t expo-template-blank-typescript```
+
+* ``` yarn add react-redux ```
+
+* ``` yarn add @reduxjs/toolkit ```
+
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -60,7 +70,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```
-   git clone https://github.com/rhcproc/react-native-redux-toolkit-counter.git
+   git clone https://github.com/rhcproc/react-native-redux-toolkit-examples.git
    ```
 3. Install NPM packages
    ```
