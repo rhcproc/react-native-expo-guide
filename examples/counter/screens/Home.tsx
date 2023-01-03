@@ -1,8 +1,8 @@
 import {View, Pressable, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../rtk/state/configureStore';
-import counterSlice from '../rtk/slice/counterSlice';
+import {RootState} from '../rtk/store';
+import counterSlice from '../rtk/slices/counterSlice';
 
 const Home = () => {
   const dispatch = useDispatch();
