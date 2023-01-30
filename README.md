@@ -78,7 +78,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 4. Start App
    ```
-   yarn start
+   expo start --web
    ```
 
 
@@ -86,7 +86,8 @@ This is an example of how to list things you need to use the software and how to
 ## Roadmap
 
 - [x] Add Counter example
-- [ ] Add Todo List example
+- [x] Add Todo List example
+- [ ] ready...
 
 
 

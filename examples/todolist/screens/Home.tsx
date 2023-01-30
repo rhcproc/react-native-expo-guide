@@ -22,21 +22,19 @@ const Home = () => {
     return (
         <SafeAreaView style={styles.container}>
             {/* <Text>Home</Text> */}
-            <TextInput placeholder='Enter Todo' onChangeText={(text) => setTodo(text)} />
+            <TextInput style={styles.input} placeholder='Enter Todo' onChangeText={(text) => setTodo(text)} />
 
-            <Pressable onPress={() => dispatch(addTodo(todo))}>
-                <Text>Add Todo</Text>
+            <Pressable style={styles.add} onPress={() => dispatch(addTodo(todo))}>
+                <Text>Add</Text>
             </Pressable>
 
 
             <FlatList
+                style={styles.flatlist}
                 data={todos}
                 renderItem={({item}) => (
                     <Pressable onPress={() => dispatch(toggleTodo(item.id))}>
-                        <Text>{item.text}</Text>
-                        
-
-                        <Text>{item.completed ? "Completed" : "Not Completed"}</Text>
+                        <Text style={styles.todos} >{item.text} {item.completed ? "[o]" : "[x]"}</Text>
                     </Pressable>
                 )}
                 keyExtractor={(item) => item.id}
@@ -54,6 +52,29 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    todos: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+    },
+    add: {
+        backgroundColor: '#f0f0f0',
+        padding: 10,
+        borderRadius: 5,
+        flexDirection: 'column',
+    },
+    flatlist: {
+        width: '100%',
+        textAlign: 'center',
+        marginTop: 20,
+    }
+
+
 });
 
 
